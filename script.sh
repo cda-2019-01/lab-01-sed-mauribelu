@@ -12,5 +12,5 @@ sed 's/\;/,/g' data4.csv > data5.csv
 #reemplazar campos nulos por /N
 sed -e 's:^,:/N,:g' -e 's:,,:,/N,:g' -e 's:,$:,/N:g' data5.csv > data6.csv
 #generar los registros que no tienen registros nulos
-sed '\:/N:d' data7.csv > datafinal.csv
+sed '\:/N:d' data7.csv > LabFinal1.csv
 rm data*
