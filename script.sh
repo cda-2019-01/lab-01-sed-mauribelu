@@ -13,7 +13,7 @@ sed 's/\;/,/g' data4.csv > data5.csv
 sed 's/a/A/g' data5.csv > data6.csv
 #Reemplazo las c minuscula por C mayúscula
 sed 's/c/C/g' data6.csv > data7.csv
-#reemplazar campos nulos por /N
+#Reemplazar campos nulos por \N
 sed -e 's:^,:\\N,:g' -e 's:,,:,\\N,:g' -e 's:,,:,\\N,:g' -e 's:,$:,\\N:g' data7.csv > data8.csv
 #Generar los registros que no tienen registros nulos
 sed '\:\N:d' data8.csv > LabFinal1.csv
