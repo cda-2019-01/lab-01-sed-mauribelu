@@ -9,7 +9,7 @@ sed 's|\([0-9][0-9]\)-\([0-9][0-9]\)-\([0-9][0-9][0-9][0-9]\);|\3-\2-\1;|g' data
 sed 's/\,/./g' data3.csv > data4.csv
 #Reemplazo de los separadores ; por ,
 sed 's/\;/,/g' data4.csv > data5.csv
-#reemplazo las a minuscula por A mayuscula
+#Reemplazo las a minuscula por A mayuscula
 sed 's/a/A/g' data5.csv > data6.csv
 #Reemplazo las c minuscula por C mayúscula
 sed 's/c/C/g' data6.csv > data7.csv
